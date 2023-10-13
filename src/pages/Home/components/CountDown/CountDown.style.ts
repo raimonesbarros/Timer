@@ -14,6 +14,18 @@ export const CountDownContainer = styled.div`
     padding: 2rem 1rem;
     border-radius: 8px;
   }
+
+  @media screen and (width <= 640px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+`;
+
+export const Minutes = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 export const Separator = styled.div`
@@ -24,4 +36,14 @@ export const Separator = styled.div`
   overflow: hidden;
   display: flex;
   justify-content: center;
+
+  @media screen and (width <= 640px) {
+    display: none;
+  }
+`;
+
+export const Seconds = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
